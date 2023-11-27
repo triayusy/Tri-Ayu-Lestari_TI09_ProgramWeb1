@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    height: 20vh;
+    background-color: rgb(233, 114, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 60vh;
+    display: flex;
+}
+
+article {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    background-color: rgb(231, 152, 231);
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(240, 170, 232);
+    display: flex;
+    align-items: center;
+    float: left;
+    padding: 20px;
+    height: 670px;
+    width: 100px;
+}
