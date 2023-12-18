@@ -1,0 +1,19 @@
+<div id="container">
+    <h1>Menghitung Kurs Rupiah</h1>
+
+    <label for="inputDollar">Masukkan Jumlah Dollar:</label>
+    <input type="number" id="inputDollar" placeholder="Jumlah Dollar">
+
+    <p id="hasilKurs"></p>
+</div>
+
+<script>
+    var inputDollar = document.getElementById('inputDollar');
+
+    inputDollar.addEventListener('input', function() {
+        var dollar = inputDollar.value;
+        var kurs = 14650;
+        var hasil = dollar * kurs;
+        document.getElementById('hasilKurs').innerHTML = 'Hasil konversi: ' + hasil + ' Rupiah';
+    });
+</script>
