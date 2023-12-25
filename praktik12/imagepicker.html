@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+</head>
+<body>
+    <label for="pilihGambar">Pilih Gambar:</label>
+    <select id="pilihGambar" onchange="tampilkanGambar()">
+      <option value="kucing">Kucing</option>
+      <option value="monyet">Monyet</option>
+      <option value="lumba-lumba">Lumba-lumba</option>
+      <option value="ayam">Ayam</option>
+      <option value="gorila">Gorila</option>
+    </select>
+    <br />
+
+    <img
+      src="foto1.jpeg"
+      id="gambarTerpilih"
+      alt="Gambar Terpilih"
+      width="300"
+    />
+
+    <script>
+      function tampilkanGambar() {
+        let nilaiTerpilih = document.getElementById("pilihGambar").value;
+        let gambarTerpilih = document.getElementById("gambarTerpilih");
+
+        switch (nilaiTerpilih) {
+          case "kucing":
+            gambarTerpilih.src = "foto1.jpeg";
+            break;
+          case "monyet":
+            gambarTerpilih.src = "foto2.jpeg";
+            break;
+          case "lumba-lumba":
+            gambarTerpilih.src = "foto3.jpeg";
+            break;
+          case "ayam":
+            gambarTerpilih.src = "foto4.jpeg";
+            break;
+          case "gorila":
+            gambarTerpilih.src = "foto5.jpeg";
+            break;
+        }
+      }
+    </script>
+</body>
+</html>
